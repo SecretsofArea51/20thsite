@@ -1,0 +1,363 @@
+:root{
+    --Very-Pale-Cyan: hsl(207, 100%, 98%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+    --Pink: hsl(322, 100%, 66%);
+    --Light-Pink: hsl(321, 100%, 78%);
+    --heading-font: "Open Sans", serif;
+    --normal-font: "Poppins", serif;
+    --fsize-normal:18px;
+}
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--normal-font);
+}
+h1{
+    font-family: var(--heading-font);
+}
+header{
+    padding-inline: 1rem;
+    padding-top: 2rem;
+    margin-bottom: 6rem;
+}
+header .first{
+    display: flex;
+    justify-content: space-between;
+}
+.logo img{
+    width: min(45vw,240px);
+}
+.free button{
+    background-color: white;
+    border: 1px solid white;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding-inline: 1.25rem;
+    padding-block: 0.5rem;
+    border-radius: 2rem;
+    box-shadow: 3px 5px 20px 5px rgb(191, 200, 204);;
+    &:hover{
+        color: var(--Grayish-Blue);
+    }
+}
+.intro{
+    text-align: center;
+    margin-top: 3.5rem;
+}
+.intro h1{
+    margin-bottom: 1.5rem;
+}
+.catchy{
+    margin-bottom: 2rem;
+}
+.catchy p{
+    font-size: var(--fsize-normal);
+}
+.written{
+    margin-bottom: 2rem;
+}
+.started button{
+    background-color: var(--Pink);
+    border: 1px solid var(--Pink);
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding-inline: 1.5rem;
+    padding-block: 0.5rem;
+    border-radius: 2rem;
+    box-shadow: 3px 5px 20px 5px rgb(191, 200, 204);
+    &:hover{
+        background-color: var(--Light-Pink);
+        color: var(--Very-Pale-Cyan);
+    }
+}
+.mock img{
+    width: 100%;
+    max-width: 70vw;
+}
+.extra{
+    width: max-content;
+    margin-inline: auto;
+}
+.extra h1{
+    font-size: 4rem;
+    font-weight: bolder;
+}
+.extra>*{
+    margin-block: 2rem;
+}
+.box{ 
+    margin-inline: auto;
+    padding-inline: 3rem;
+    padding-block: 4rem;
+    text-align: center;
+    /* margin-block: 2rem; */
+}
+.box h1{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.box p{
+    color: var(--Grayish-Blue);
+    font-size: var(--fsize-normal);
+}
+.photo img{
+    width: 100%;
+}
+.top-one , .top-two{
+    margin-bottom: -0.4rem;
+}
+.grow ,.user{
+    background-color:var(--Very-Pale-Cyan);
+}
+
+.fuck{
+    text-align: center;
+    max-width: max-content;
+    margin-inline: auto;
+    padding-inline: 0.5rem;
+    padding-block: 2rem;
+
+    background-color: white;
+    /* box-shadow: 2px 2px 20px; */
+    border-radius: 1rem;
+
+    position: relative;
+    /* bottom: -4rem; */
+}
+.fuck>*{
+    margin-block: 1rem;
+}
+.fuck h1{
+    font-size: var(--fsize-normal)
+}
+.fuck button{
+    background-color: var(--Pink);
+    border: 1px solid var(--Pink);
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding-inline: 1.5rem;
+    padding-block: 0.5rem;
+    border-radius: 2rem;
+    box-shadow: 3px 5px 20px 5px rgb(191, 200, 204);
+    &:hover{
+        background-color: var(--Light-Pink);
+        color: var(--Very-Pale-Cyan);
+    }
+}
+.myfoot{
+    width: 100%;
+    margin-bottom: -0.4rem;
+}
+footer{
+    background-color: var(--Very-Dark-Cyan);
+    color: white;
+    text-align: unset;
+}
+.parry{
+    padding: 1rem;
+}
+footer .logo{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(180deg);
+}
+.social{
+    text-align: left;
+}
+.social img{
+    margin-top: 1.5rem;
+
+    width: 40px;
+    height: 40px;
+    rotate: 25deg; 
+    transition: rotate 2s,filter 2s , transform 1s;
+    &:hover{
+        rotate: 1080deg;
+         /* filter: invert(67%) sepia(27%) saturate(432%) hue-rotate(165deg) brightness(92%) contrast(92%); */
+        /* filter: invert(50%) sepia(100%) saturate(10000%) hue-rotate(180deg) brightness(100%) contrast(100%); */
+        filter: invert(50%) sepia(100%) saturate(10000%) hue-rotate(330deg) brightness(100%) contrast(100%);
+        transform: scale(1.2);
+    }
+}
+.info>*,.social{
+    font-size: 1.35rem;
+    color: white;
+    margin-block: 1rem;
+}
+
+.subscribe button ,.subscribe input{
+    display: block;
+}
+.subscribe h1{
+    font-size: 1.75rem;
+    margin-block: 1rem;
+}
+.subscribe input{
+    margin-inline: auto;
+    margin-block: 1rem;
+    border: 1px solid white;
+    padding-inline: 2.5rem;
+    padding-block: 1rem;
+    border-radius: 0.5rem;
+    &:hover{
+        border: 2px solid red;
+    }
+}
+.subscribe button{
+    margin-inline: auto;
+    margin-right: 0;
+    margin-bottom: 2rem;
+    background-color: var(--Pink);
+    border: 1px solid var(--Pink);
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-inline: 1.5rem;
+    padding-block: 0.8rem;
+    border-radius: 0.5rem;
+    &:hover{
+        background-color: var(--Light-Pink);
+        color: var(--Very-Pale-Cyan);
+    }
+}
+.likha{
+    max-width: 400px;
+}
+@media(min-width:350px){
+    .fuck h1{
+        font-size: 1.3rem;
+    }
+}
+@media(min-width:400px){
+    .fuck h1 , .written h1{
+        font-size: 1.5rem;
+    }
+}
+@media(min-width:500px){
+    .fuck h1, .written h1{
+        font-size: 1.75rem;
+    }
+    .top-one{
+        content: url(images/desktop-section-top-1.svg);
+    }
+    .top-two{
+        content: url(images/desktop-section-top-2.svg);
+    }
+    .bottom-one{
+        content: url(images/desktop-section-bottom-1.svg);
+    }
+    .bottom-two{
+        content: url(images/desktop-section-bottom-2.svg);
+    }
+
+    .myfoot{
+        content: url(images/bg-footer-top-desktop.svg);
+    }
+}
+@media(min-width:610px){
+    footer ,.social{
+        text-align: center;
+    }
+    .likha{
+        margin-inline: auto;
+    }
+    .fuck h1, .written h1{
+        font-size: 2rem;
+    }
+    .subscribe button ,.subscribe input{
+        display: inline-block;
+        margin-right: 2rem;
+    }
+}
+@media(min-width:700px){
+    .box{
+        display: flex;
+        text-align: left;
+        justify-content: space-around;
+        gap: 1rem;
+    }
+    .extra{
+        display: flex;
+        gap: 10rem;
+    }
+    .box>*{
+        margin-inline: 0.5rem;
+        align-self: center;
+    }
+    .grow{
+        flex-direction: row-reverse;
+    }
+    .user{
+        flex-direction: row-reverse;
+    }
+    .fuck{
+        padding-inline: 2rem;
+        padding-block: 3rem;
+    }
+    .fuck h1, .written h1{
+        font-size: 2.5rem; 
+    }
+}
+@media(min-width:950px){
+header{
+    padding-inline: 2rem;
+    padding-top: 4rem;
+}
+.free button{
+    padding-inline: 4rem;
+    padding-block: 0.8rem;   
+}
+.intro h1{
+    font-weight: 700;
+}
+.extra{
+    gap: 30vw;
+}
+.extra h1{
+    font-size: 5rem;
+}
+.paragraph{
+    width: 40vw;
+    margin-inline: auto;
+}
+.fuck h1,.intro h1{
+    font-size: 2.75rem; 
+}
+footer{
+    text-align:unset;
+}
+.social{
+    text-align: left;
+}
+.subscribe h1{
+    font-size: 2.25rem;
+}
+.likha{
+    margin-inline: unset;
+}
+.subscribe input{
+    padding-right: 9rem;
+}
+.subscribe button{
+    padding-inline: 3rem;
+}
+.last{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+}
+.last>*>*{
+    font-size: var(--fsize-normal);
+}
+}
+@media(min-width:1080px){
+.box{
+    padding-left: 7.5rem;
+    gap:5rem;
+}
+}
